@@ -7,6 +7,11 @@ export const messages = {
     navProjects: 'Projetos',
     navTechnologies: 'Tecnologias',
     navContact: 'Contato',
+    heroGreeting: 'Prazer, eu sou',
+    heroName: 'André Andrade',
+    heroRole: 'Desenvolvedor Front-end',
+    heroAbout:
+      'Com 9 anos de experiência em desenvolvimento Front-End, atuo em diferentes tecnologias para criar produtos escaláveis, com forte domínio em React, Next.js e TypeScript e foco em performance, qualidade de código e experiência do usuário (UX).',
     title:
       'Desenvolvedor front-end focado em experiencias digitais claras e memoraveis.',
     description:
@@ -28,6 +33,11 @@ export const messages = {
     navProjects: 'Projects',
     navTechnologies: 'Technologies',
     navContact: 'Contact',
+    heroGreeting: 'Hi, I am',
+    heroName: 'André Andrade',
+    heroRole: 'Front-end Developer',
+    heroAbout:
+      'With 9 years of Front-End development experience, I work across different technologies to build scalable products, with strong expertise in React, Next.js, and TypeScript, focused on performance, code quality, and user experience (UX).',
     title:
       'Front-end developer focused on clear, memorable digital experiences.',
     description:
