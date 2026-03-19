@@ -17,6 +17,7 @@ const technologies: Technology[] = [
   { name: 'Nuxt.js' },
   { name: 'PHP Laravel' },
   { name: 'SQL' },
+  { name: 'Docker' },
   { name: 'HTML' },
   { name: 'CSS / Less' },
   { name: 'Material UI' },
@@ -189,6 +190,28 @@ function TechnologyIcon({ name }: { name: string }) {
           <ellipse cx="12" cy="6.5" rx="7" ry="3" />
           <path d="M5 6.5v8c0 1.6 3.1 3 7 3s7-1.4 7-3v-8" />
           <path d="M5 10.5c0 1.6 3.1 3 7 3s7-1.4 7-3" />
+        </svg>
+      )
+
+    case 'Docker':
+      return (
+        <svg
+          viewBox="0 0 24 24"
+          className={base}
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          aria-hidden="true"
+        >
+          <rect x="3" y="11" width="4" height="3" />
+          <rect x="8" y="11" width="4" height="3" />
+          <rect x="13" y="11" width="4" height="3" />
+          <rect x="8" y="7" width="4" height="3" />
+          <rect x="13" y="7" width="4" height="3" />
+          <path d="M3 15h15c-.4 2.5-2.3 4-5 4H8.5C6 19 4.1 17.5 3.6 15.2" />
+          <path d="M20 12.6c.8-.2 1.4 0 1.9.5-.4 1.6-1.4 2.3-3 2.1" />
         </svg>
       )
 
