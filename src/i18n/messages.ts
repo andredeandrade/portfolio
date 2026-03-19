@@ -26,6 +26,11 @@ export const messages = {
     socialEmail: 'Email',
     menuOpen: 'Abrir menu',
     menuClose: 'Fechar menu',
+    techTitle: 'Tecnologias e ferramentas',
+    techLead:
+      'Atuo no desenvolvimento de aplicacoes web para e-commerce, plataformas escalaveis e bibliotecas de componentes, com foco em performance, qualidade de codigo, boas praticas, arquitetura front-end e CI/CD em ambientes ageis.',
+    techStackIntro:
+      'Stack com a qual trabalho com domínio técnico e experiência de implementação real.',
   },
   en: {
     badge: 'Portfolio',
@@ -52,6 +57,11 @@ export const messages = {
     socialEmail: 'Email',
     menuOpen: 'Open menu',
     menuClose: 'Close menu',
+    techTitle: 'Technologies and tools',
+    techLead:
+      'I build web applications for e-commerce, scalable platforms, and component libraries, with focus on performance, code quality, best practices, front-end architecture, and CI/CD in agile teams.',
+    techStackIntro:
+      'Where I have strong command and hands-on experience in real projects.',
   },
 } as const
 
