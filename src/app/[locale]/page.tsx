@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation'
 import { HeroSection } from '@/components/heroSection'
+import { ProjectsSection } from '@/components/projectsSection'
 import { TechnologiesSection } from '@/components/technologiesSection'
 import { TopBar } from '@/components/topBar'
 import { isLocale, locales, type Locale } from '@/i18n/config'
@@ -30,11 +31,7 @@ export default async function LocaleHomePage({ params }: PageProps) {
 
       <TechnologiesSection text={text} />
 
-      <section id="projects" className="container py-8">
-        <div className="card p-8 text-[var(--color-muted)]">
-          Projects section
-        </div>
-      </section>
+      <ProjectsSection text={text} />
 
       <section id="contact" className="container py-8 pb-16">
         <div className="card p-8 text-[var(--color-muted)]">

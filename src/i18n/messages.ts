@@ -28,9 +28,19 @@ export const messages = {
     menuClose: 'Fechar menu',
     techTitle: 'Tecnologias e ferramentas',
     techLead:
-      'Atuo no desenvolvimento de aplicacoes web para e-commerce, plataformas escalaveis e bibliotecas de componentes, com foco em performance, qualidade de codigo, boas praticas, arquitetura front-end e CI/CD em ambientes ageis.',
+      'Atuo no desenvolvimento de aplicações web para e-commerce, plataformas escaláveis e bibliotecas de componentes, com foco em performance, qualidade de código, boas práticas, arquitetura front-end e CI/CD em ambientes ágeis.',
     techStackIntro:
       'Stack com a qual trabalho com domínio técnico e experiência de implementação real.',
+    projectsTitle: 'Projetos em destaque',
+    projectsLead:
+      'Uma seleção de trabalhos recentes com foco em UX, performance e código limpo.',
+    projectCardTitle: 'E-commerce Dashboard',
+    projectCardType: 'Web application',
+    projectCardDescription:
+      'Dashboard de e-commerce com análises de vendas, gerenciamento de catálogo e operações, construído com arquitetura moderna e foco em escalabilidade.',
+    projectStackLabel: 'Stack',
+    projectSource: 'Source',
+    projectLive: 'Demo',
   },
   en: {
     badge: 'Portfolio',
@@ -62,6 +72,16 @@ export const messages = {
       'I build web applications for e-commerce, scalable platforms, and component libraries, with focus on performance, code quality, best practices, front-end architecture, and CI/CD in agile teams.',
     techStackIntro:
       'Where I have strong command and hands-on experience in real projects.',
+    projectsTitle: 'Featured projects',
+    projectsLead:
+      'A selection of recent work focused on UX, performance, and clean code.',
+    projectCardTitle: 'E-commerce Dashboard',
+    projectCardType: 'Web application',
+    projectCardDescription:
+      'An e-commerce dashboard for sales analytics, catalog management, and operations, built with a modern architecture focused on scalability.',
+    projectStackLabel: 'Stack',
+    projectSource: 'Source',
+    projectLive: 'Demo',
   },
 } as const
 
