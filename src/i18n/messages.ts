@@ -44,6 +44,8 @@ export const messages = {
     contactTitle: 'Contato',
     contactLead: 'Fique a vontade para entrar em contato para qualquer duvida!',
     contactWhatsapp: 'WhatsApp',
+    footerRights: '© {year} Andre Andrade. Todos os direitos reservados.',
+    footerBackToTop: 'Voltar ao topo',
   },
   en: {
     badge: 'Portfolio',
@@ -88,6 +90,8 @@ export const messages = {
     contactTitle: 'Contact',
     contactLead: 'Feel free to contact me for any kind of query!',
     contactWhatsapp: 'WhatsApp',
+    footerRights: '© {year} Andre Andrade. All rights reserved.',
+    footerBackToTop: 'Back to top',
   },
 } as const
 
