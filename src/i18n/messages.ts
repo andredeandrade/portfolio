@@ -41,6 +41,9 @@ export const messages = {
     projectStackLabel: 'Stack',
     projectSource: 'Source',
     projectLive: 'Demo',
+    contactTitle: 'Contato',
+    contactLead: 'Fique a vontade para entrar em contato para qualquer duvida!',
+    contactWhatsapp: 'WhatsApp',
   },
   en: {
     badge: 'Portfolio',
@@ -82,6 +85,9 @@ export const messages = {
     projectStackLabel: 'Stack',
     projectSource: 'Source',
     projectLive: 'Demo',
+    contactTitle: 'Contact',
+    contactLead: 'Feel free to contact me for any kind of query!',
+    contactWhatsapp: 'WhatsApp',
   },
 } as const
 

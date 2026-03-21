@@ -1,7 +1,10 @@
 import type { MessageBundle } from '@/i18n/messages'
 
 type SocialLinksProps = {
-  text: Pick<MessageBundle, 'socialGithub' | 'socialLinkedin' | 'socialEmail'>
+  text: Pick<
+    MessageBundle,
+    'socialGithub' | 'socialLinkedin' | 'contactWhatsapp'
+  >
 }
 
 export function SocialLinks({ text }: SocialLinksProps) {
@@ -40,8 +43,10 @@ export function SocialLinks({ text }: SocialLinksProps) {
       </a>
 
       <a
-        href="mailto:andre@andrade.inf.br"
-        aria-label={text.socialEmail}
+        href="https://wa.me/5551989353301"
+        target="_blank"
+        rel="noreferrer"
+        aria-label={text.contactWhatsapp}
         className="rounded-md p-2 text-[var(--topbar-text-soft)] transition-colors hover:bg-[var(--topbar-hover)] hover:text-[var(--topbar-text)]"
       >
         <svg
@@ -49,7 +54,7 @@ export function SocialLinks({ text }: SocialLinksProps) {
           className="h-6 w-6 fill-current"
           aria-hidden="true"
         >
-          <path d="M4 6h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1m0 2v.5l8 4.5 8-4.5V8l-8 4.5L4 8" />
+          <path d="M12.02 2a9.95 9.95 0 0 0-8.5 15.14L2 22l5.03-1.48A10 10 0 1 0 12.02 2m5.77 14.37c-.24.66-1.4 1.26-1.93 1.34-.5.07-1.13.1-1.82-.12-.42-.13-.95-.31-1.64-.6-2.88-1.25-4.75-4.16-4.9-4.36-.14-.2-1.16-1.55-1.16-2.95s.73-2.08 1-2.36a1.1 1.1 0 0 1 .8-.38h.58c.19 0 .45-.07.7.53.24.6.8 2.08.87 2.23.07.14.12.31.02.5-.1.2-.14.31-.29.48-.14.17-.3.38-.42.5-.14.14-.29.3-.12.58.16.28.73 1.21 1.57 1.95 1.07.95 1.98 1.25 2.27 1.4.29.14.46.12.63-.07.17-.2.73-.85.93-1.14.2-.29.4-.24.66-.14.27.1 1.69.8 1.98.95.28.14.48.22.55.34.07.13.07.75-.17 1.42" />
         </svg>
       </a>
     </>
