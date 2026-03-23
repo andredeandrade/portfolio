@@ -40,7 +40,7 @@ export const messages = {
     projectSource: 'Source',
     projectLive: 'Demo',
     contactTitle: 'Contato',
-    contactLead: 'Fique a vontade para entrar em contato para qualquer duvida!',
+    contactLead: 'Fique à vontade para entrar em contato para qualquer dúvida!',
     contactWhatsapp: 'WhatsApp',
     footerRights: '© {year} Andre Andrade. Todos os direitos reservados.',
     footerBackToTop: 'Voltar ao topo',

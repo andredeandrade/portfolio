@@ -95,20 +95,23 @@ export function MobileMenu({ locale, text }: MobileMenuProps) {
           <nav className="flex flex-1 flex-col items-center justify-center gap-8">
             {(
               [
-                { href: '#about', label: text.navAbout },
-                { href: '#projects', label: text.navProjects },
-                { href: '#technologies', label: text.navTechnologies },
-                { href: '#contact', label: text.navContact },
+                { href: `/${locale}/about`, label: text.navAbout },
+                { href: `/${locale}/#projects`, label: text.navProjects },
+                {
+                  href: `/${locale}/#technologies`,
+                  label: text.navTechnologies,
+                },
+                { href: `/${locale}/#contact`, label: text.navContact },
               ] as const
             ).map(({ href, label }) => (
-              <a
+              <Link
                 key={href}
                 href={href}
                 onClick={() => setOpen(false)}
                 className="text-4xl font-semibold text-[var(--topbar-text-soft)] transition-colors hover:text-[var(--topbar-text)]"
               >
                 {label}
-              </a>
+              </Link>
             ))}
           </nav>
 

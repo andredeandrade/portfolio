@@ -1,39 +1,42 @@
+import Link from 'next/link'
+import type { Locale } from '@/i18n/config'
 import type { MessageBundle } from '@/i18n/messages'
 
 type TopBarMenuProps = {
+  locale: Locale
   text: Pick<
     MessageBundle,
     'navProjects' | 'navTechnologies' | 'navAbout' | 'navContact'
   >
 }
 
-export function TopBarMenu({ text }: TopBarMenuProps) {
+export function TopBarMenu({ locale, text }: TopBarMenuProps) {
   return (
     <nav className="hidden items-center gap-14 text-[1.1rem] font-medium text-[var(--topbar-text-soft)] lg:flex">
-      <a
-        href="#about"
+      <Link
+        href={`/${locale}/about`}
         className="transition-colors hover:text-[var(--topbar-text)]"
       >
         {text.navAbout}
-      </a>
-      <a
-        href="#technologies"
+      </Link>
+      <Link
+        href={`/${locale}/#technologies`}
         className="transition-colors hover:text-[var(--topbar-text)]"
       >
         {text.navTechnologies}
-      </a>
-      <a
-        href="#projects"
+      </Link>
+      <Link
+        href={`/${locale}/#projects`}
         className="transition-colors hover:text-[var(--topbar-text)]"
       >
         {text.navProjects}
-      </a>
-      <a
-        href="#contact"
+      </Link>
+      <Link
+        href={`/${locale}/#contact`}
         className="transition-colors hover:text-[var(--topbar-text)]"
       >
         {text.navContact}
-      </a>
+      </Link>
     </nav>
   )
 }

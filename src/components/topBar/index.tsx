@@ -38,7 +38,7 @@ export function TopBar({ locale, text }: TopBarProps) {
           <span>{text.badge}</span>
         </Link>
 
-        <TopBarMenu text={text} />
+        <TopBarMenu locale={locale} text={text} />
 
         {/* Desktop controls — hidden below 1024 px */}
         <div className="hidden items-center gap-2 lg:flex">
