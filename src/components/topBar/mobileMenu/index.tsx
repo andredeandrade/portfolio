@@ -5,7 +5,6 @@ import Link from 'next/link'
 import type { Locale } from '@/i18n/config'
 import type { MessageBundle } from '@/i18n/messages'
 import { LocaleToggle } from '@/components/topBar/localeToggle'
-import { ThemeToggle } from '@/components/topBar/themeToggle'
 import { SocialLinks } from '@/components/topBar/socialLinks'
 
 type MobileMenuProps = {
@@ -118,12 +117,8 @@ export function MobileMenu({ locale, text }: MobileMenuProps) {
             <div className="flex items-center gap-1">
               <SocialLinks text={text} />
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center">
               <LocaleToggle locale={locale} label={text.localeSwitch} />
-              <ThemeToggle
-                switchToLight={text.switchToLight}
-                switchToDark={text.switchToDark}
-              />
             </div>
           </div>
         </div>

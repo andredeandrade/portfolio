@@ -2,7 +2,6 @@ import Link from 'next/link'
 import type { Locale } from '@/i18n/config'
 import type { MessageBundle } from '@/i18n/messages'
 import { LocaleToggle } from '@/components/topBar/localeToggle'
-import { ThemeToggle } from '@/components/topBar/themeToggle'
 import { SocialLinks } from '@/components/topBar/socialLinks'
 import { TopBarMenu } from '@/components/topBar/menu'
 import { MobileMenu } from '@/components/topBar/mobileMenu'
@@ -45,10 +44,6 @@ export function TopBar({ locale, text }: TopBarProps) {
         <div className="hidden items-center gap-2 lg:flex">
           <SocialLinks text={text} />
           <LocaleToggle locale={locale} label={text.localeSwitch} />
-          <ThemeToggle
-            switchToLight={text.switchToLight}
-            switchToDark={text.switchToDark}
-          />
         </div>
 
         {/* Mobile hamburger — hidden at lg and above */}
